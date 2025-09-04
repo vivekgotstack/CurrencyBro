@@ -1,4 +1,4 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Indian_Rupee_symbol.svg" alt="RS Logo" width="50" /> Currency Converter
+# $Currency$ $Converter$ 💸
 
 A modern, lightweight **Currency Converter** built with **React**, **TypeScript**, and **Tailwind CSS** using **ShadCN components**. Convert currencies in real-time with an elegant glassmorphic UI.
 
