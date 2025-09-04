@@ -3,7 +3,7 @@ import { useFetch } from "./hooks/useFetch";
 import { InputBox } from "./components/InputBox";
 import { Button } from "@/components/ui/button";
 import { Alert } from "@/components/ui/alert";
-import { Loader2 } from "lucide-react"; // shadcn recommended loader
+import { Loader2 } from "lucide-react";
 
 function App() {
   const [amount, setAmount] = useState(1);
