@@ -44,8 +44,18 @@ function App() {
           onCurrencyChange={setFrom}
           selectCurrency={from}
           currencyOptions={options}
-          className="mb-4"
         />
+
+        <div className="flex justify-center">
+          <Button
+            onClick={swap}
+            disabled={loading}
+            className="w-full py-2 bg-gradient-to-r from-blue-400 to-blue-600 text-white transition-all duration-1000 hover:from-amber-300 hover:to-blue-700 flex items-center justify-center"
+          >
+            {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            Swap
+          </Button>
+        </div>
 
         <InputBox
           label="To"
@@ -62,17 +72,6 @@ function App() {
             {error}
           </Alert>
         )}
-
-        <div className="flex justify-center mt-6">
-          <Button
-            onClick={swap}
-            disabled={loading}
-            className="px-6 py-2 bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg transition-all duration-1000 hover:from-yellow-500 hover:to-blue-300 flex items-center justify-center"
-          >
-            {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            Swap
-          </Button>
-        </div>
       </div>
     </div>
   );
